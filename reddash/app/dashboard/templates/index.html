@@ -26,13 +26,15 @@
             <img src="{{ variables['bot']['avatar'] }}" style="height: 200px; width: 200px; border-radius: 50%; margin: auto; display: block;">
           </div>
           <div class="col-lg-8">
-            <h4>{{ variables['bot']['info']|safe }}</h4>
+            <h4>{{ botname }}</h4>
+            <br />
+            <h4> Melon is a bot designed to keep your server safe and engage your members. It has auto-mod capabilities that filter outs certain types of behavior when your staff team is not available. Melon has it's own custom giveaways system, donation logging system, leveling system, custom commands system, engaging-fun-commands, informative-commands, utility commands and more! </h4>
             <br />
             {% if redirect %}
-            <a href="{{ variables['ui']['invite'] }}" target="_blank">Invite</a>
+            <a href="{{ invite }}" target="_blank">Invite</a>
             {% endif %}
             {% if support %}
-            • <a href="{{ variables['ui']['support'] }}" target="_blank">{{ _('Join support server') }}</a>
+            • <a href="{{ support }}" target="_blank">{{ _('Join support server') }}</a>
             {% endif %}
           </div>
         </div>
